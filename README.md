@@ -20,3 +20,14 @@ So the 555 Timer IC activates the transistor connected in series to it, and thus
 
 ![image](https://user-images.githubusercontent.com/68660836/227026403-364f4b34-a2c2-42b1-b6ba-feb6e838bcd4.png)
 
+# Components of the Circuit
+
+- LM-741 Op-Amp IC 
+-	Negative Temperature Coefficient (NTC) Thermistor
+-	Resistances
+-	Variable Resistor 
+-	Transistor 
+-	DC Motor (Fan)
+-	Supply Voltage  
+
+
