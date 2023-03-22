@@ -30,4 +30,19 @@ So the 555 Timer IC activates the transistor connected in series to it, and thus
 -	DC Motor (Fan)
 -	Supply Voltage  
 
+# Working 
+
+-	The Automatic Temperature Control circuit as shown comprises of the Fan connected at the Output side of the Transistor Q1. The thermistor RT1 works in such a way that when the temperature increases, it’s resistance decreases. So, as we can see, the Non-Inverting input of the Op-Amp (pin 3) is connected to the potentiometer (Variable Resistance), which helps to agenerate a variable voltage. The Voltages are shown as V+ and V- (pin 1 and pin 5) are the VCC and -VEE respectively, to provide appropriate biasing. 
+
+-	The Inverting Input of the Op-Amp (pin 2) is connected between the Fixed Resistor R2 and the NTC Thermistor RT1 to form a voltage divider circuit. When the temperature is low and it is cold, the resistance offered by the thermistor RT1 is very high and thus the value of the Inverting Input of the Op-Amp (V2) is very high and the Output Voltage of the Op-Amp (pin 6), given by:  
+V0 = A*(Non-Inverting Input Voltage – Inverting Input Voltage) = A*(V3 - V2),                   
+Where, A= Open Loop Gain of the Op-Amp.
+
+-	Thus, we can see that because RT1 is high, V2 is high, and so the output voltage reduced. Due to this, very little current (almost negligible) flows through the output terminals of the Op-Amp, and thus the transistor Q1 remains in OFF condition.
+
+-	As the temperature increases and it gets hot, the resistance offered by the Thermistor RT1 decreases and the Voltage V2 also reduces. Thus, the output voltage offered by the Op-Amp increases and so the current flowing through the base of the transistor Q1 increases and it gets switched ON. Now because the transistor Q1 is ON, the fan attached to the output of the Transistor gets turned ON.
+
+# AUTOMATIC LIGHT CONTROLLER USING 555 TIMER IC
+
+
 
