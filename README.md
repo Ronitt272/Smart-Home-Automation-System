@@ -18,7 +18,8 @@ So the 555 Timer IC activates the transistor connected in series to it, and thus
 
 # Circuit Diagram 
 
-![image](https://user-images.githubusercontent.com/68660836/227026403-364f4b34-a2c2-42b1-b6ba-feb6e838bcd4.png)
+![image](https://user-images.githubusercontent.com/68660836/227031134-8a9dadf8-9736-4fd7-a022-efbaf4405d5a.png)
+
 
 # Components of the Circuit
 
@@ -43,6 +44,48 @@ Where, A= Open Loop Gain of the Op-Amp.
 -	As the temperature increases and it gets hot, the resistance offered by the Thermistor RT1 decreases and the Voltage V2 also reduces. Thus, the output voltage offered by the Op-Amp increases and so the current flowing through the base of the transistor Q1 increases and it gets switched ON. Now because the transistor Q1 is ON, the fan attached to the output of the Transistor gets turned ON.
 
 # AUTOMATIC LIGHT CONTROLLER USING 555 TIMER IC
+
+# Circuit Diagram
+
+![image](https://user-images.githubusercontent.com/68660836/227031686-86886ad5-b6f7-43f3-b41a-8c8b6962d424.png)
+
+
+# Components of the Circuit
+
+-	Torch
+-	Light Dependant Resistor (LDR)
+-	NE555 Timer IC
+-	Variable Resistor 
+-	Q2N2222 Transistor
+-	Light Emitting Diode (LED)
+-	Voltage Regulator 
+-	Resistances
+
+# Working 
+
+The IC7812 shown above is a voltage regulator, and it is responsible for providing a constant DC Voltage supply to the 555 Timer and also to the voltage divider circuit.
+
+The ‘Trigger’ pin of the 555 Timer is connected in between the Variable Resistance (RV1) and the Light Dependent Resistor (LDR), thus forming a voltage divider circuit.
+
+-	CASE-1: WHEN IT IS DIM
+When the Torch is “OFF”, i.e. when it is dim, the LDR offers a high resistance, and thus the potential drop across the Resistor, RV1 is small, and since the Non-Inverting Voltage of the comparator 1 is set to VCC/3, by the internal voltage divider present in the 555 Timer, when the value of the potential drop across RV1 is below VCC/3, the output of the comparator is ‘1’, and thus the S pin of the Flip-Flop gets the value of ‘1’, which is then converted to ‘0’ by the Flip-Flop. The output that comes out of the Flip-Flop is ‘0’, which is then converted to 1 by the invertor placed at the Output Stage. So, the 555 Timer output is “HIGH”. 
+Now since the output of the 555 Timer is “HIGH”, a large current flows through the Resistance R1 and the base of the Transistor Q, thus switching the transistor “ON”. Since the Transistor Q is switched “ON”, we can see that the Supply Voltage VCC placed above finds a straight path to the ground via the Resistor RV2 and the LED Diode D. Thus, the Diode gets switched “ON”, and Light gets turned “ON”.
+
+-	CASE-2: WHEN IT IS BRIGHT
+When the Torch is turned “ON”, i.e. when it is bright, the LDR offers a low resistance, and thus the potential drop across the Resistor RV1 is large, and since the Non-Inverting Voltage of the Comparator 1 is set to VCC/3, when the value of the potential drop across RV1 exceeds VCC/3, the output of the Comparator is ‘0’, so the S pin of the Flip-Flop gets the value of ‘0’, which is then converted to ‘1’ by the Flip-Flop. The output that comes out of the Flip-Flop is ‘1’, which is then converted to ‘0’ by the invertor placed at the Output Stage of the 555 Timer. So, the 555 Timer output is “LOW”. 
+Now because the output of the 555 Timer is “LOW”, negligible current flows through the Resistor R1 and the Base of the Transistor Q. Thus, the transistor gets switched “OFF”. Since the transistor is “OFF”, we can see that the no current would flow through the LED Diode D, and thus is gets switched “OFF”.
+
+Thus We have seen how the torch can help control the Trigger of the 555 Timer, and thus generate Pulse Width Modulated Signals. And so, this circuit can be efficiently used to design an Automatic Light Controller Circuit. 
+
+# Smart Home Automation System
+
+The Smart Home Automation System works as a combination of both Automatic Temperature Controlled Fan Circuit and the Automatic Light Controller Circuit. This is
+because the Automatic Temperature Controlled Fan circuit is used to switch the Fans ‘ON’, whenever it is hot, and switch them ‘OFF’ whenever it is cold. Also, the
+Automatic Light Controller Circuit will switch the lights ‘ON’, whenever it is dark, and will switch the lights ‘OFF’, when It is bright. Hence, we get an automated
+control over the fans and lights present in the Home. 
+
+
+
 
 
 
