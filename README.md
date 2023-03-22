@@ -18,7 +18,7 @@ So the 555 Timer IC activates the transistor connected in series to it, and thus
 
 # Circuit Diagram 
 
-![image](https://user-images.githubusercontent.com/68660836/227031134-8a9dadf8-9736-4fd7-a022-efbaf4405d5a.png)
+![image](https://user-images.githubusercontent.com/68660836/227035306-1ff063df-8060-4774-91b2-491d5d2a549f.png)
 
 
 # Components of the Circuit
@@ -47,7 +47,7 @@ Where, A= Open Loop Gain of the Op-Amp.
 
 # Circuit Diagram
 
-![image](https://user-images.githubusercontent.com/68660836/227031686-86886ad5-b6f7-43f3-b41a-8c8b6962d424.png)
+![image](https://user-images.githubusercontent.com/68660836/227035237-eb551e08-3bb5-4bd6-a4da-8010960669bf.png)
 
 
 # Components of the Circuit
@@ -84,7 +84,13 @@ because the Automatic Temperature Controlled Fan circuit is used to switch the F
 Automatic Light Controller Circuit will switch the lights ‘ON’, whenever it is dark, and will switch the lights ‘OFF’, when It is bright. Hence, we get an automated
 control over the fans and lights present in the Home. 
 
+# Switched 'OFF'
 
+![image](https://user-images.githubusercontent.com/68660836/227035480-64984ae5-b24a-401f-a4b3-08422da030c1.png)
+
+# Switched 'ON'
+
+![image](https://user-images.githubusercontent.com/68660836/227035567-1e1b2229-f0c3-4777-bf49-056311b62a4c.png)
 
 
 
