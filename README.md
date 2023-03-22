@@ -13,3 +13,10 @@
 - The circuit works in a way that when the torch is turned “OFF”, or when it is dim, the voltage across the LDR would fall, thus providing a trigger to the 555 Timer IC with the help of a Voltage Divider circuit.
 So the 555 Timer IC activates the transistor connected in series to it, and thus the Lights also get turned “ON”. 
 - This circuit utilises the ability of a 555 Timer IC to generate pulses and perform Pulse Width Modulation (PWM).
+
+# AUTOMATIC TEMPERATURE CONTROLLED FAN CIRCUIT
+
+# Circuit Diagram 
+
+![image](https://user-images.githubusercontent.com/68660836/227026403-364f4b34-a2c2-42b1-b6ba-feb6e838bcd4.png)
+
