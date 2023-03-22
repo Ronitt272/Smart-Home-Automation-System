@@ -14,7 +14,8 @@
 So the 555 Timer IC activates the transistor connected in series to it, and thus the Lights also get turned “ON”. 
 - This circuit utilises the ability of a 555 Timer IC to generate pulses and perform Pulse Width Modulation (PWM).
 
-# AUTOMATIC TEMPERATURE CONTROLLED FAN CIRCUIT USING LM-741 OP-AMP
+# AUTOMATIC TEMPERATURE CONTROLLED FAN CIRCUIT USING 
+# LM-741 OP-AMP
 
 # Circuit Diagram 
 
