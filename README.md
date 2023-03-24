@@ -77,7 +77,7 @@ Now since the output of the 555 Timer is “HIGH”, a large current flows throu
 When the Torch is turned “ON”, i.e. when it is bright, the LDR offers a low resistance, and thus the potential drop across the Resistor RV1 is large, and since the Non-Inverting Voltage of the Comparator 1 is set to VCC/3, when the value of the potential drop across RV1 exceeds VCC/3, the output of the Comparator is ‘0’, so the S pin of the Flip-Flop gets the value of ‘0’, which is then converted to ‘1’ by the Flip-Flop. The output that comes out of the Flip-Flop is ‘1’, which is then converted to ‘0’ by the invertor placed at the Output Stage of the 555 Timer. So, the 555 Timer output is “LOW”. 
 Now because the output of the 555 Timer is “LOW”, negligible current flows through the Resistor R1 and the Base of the Transistor Q. Thus, the transistor gets switched “OFF”. Since the transistor is “OFF”, we can see that the no current would flow through the LED Diode D, and thus is gets switched “OFF”.
 
-Thus We have seen how the torch can help control the Trigger of the 555 Timer, and thus generate Pulse Width Modulated Signals. And so, this circuit can be efficiently used to design an Automatic Light Controller Circuit. 
+Thus, we have seen how the torch can help control the Trigger of the 555 Timer, and thus generate Pulse Width Modulated Signals. And so, this circuit can be efficiently used to design an Automatic Light Controller Circuit. 
 
 # Smart Home Automation System
 
