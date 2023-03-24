@@ -68,10 +68,12 @@ The IC7812 shown above is a voltage regulator, and it is responsible for providi
 The ‘Trigger’ pin of the 555 Timer is connected in between the Variable Resistance (RV1) and the Light Dependent Resistor (LDR), thus forming a voltage divider circuit.
 
 -	CASE-1: WHEN IT IS DIM
+
 When the Torch is “OFF”, i.e. when it is dim, the LDR offers a high resistance, and thus the potential drop across the Resistor, RV1 is small, and since the Non-Inverting Voltage of the comparator 1 is set to VCC/3, by the internal voltage divider present in the 555 Timer, when the value of the potential drop across RV1 is below VCC/3, the output of the comparator is ‘1’, and thus the S pin of the Flip-Flop gets the value of ‘1’, which is then converted to ‘0’ by the Flip-Flop. The output that comes out of the Flip-Flop is ‘0’, which is then converted to 1 by the invertor placed at the Output Stage. So, the 555 Timer output is “HIGH”. 
 Now since the output of the 555 Timer is “HIGH”, a large current flows through the Resistance R1 and the base of the Transistor Q, thus switching the transistor “ON”. Since the Transistor Q is switched “ON”, we can see that the Supply Voltage VCC placed above finds a straight path to the ground via the Resistor RV2 and the LED Diode D. Thus, the Diode gets switched “ON”, and Light gets turned “ON”.
 
 -	CASE-2: WHEN IT IS BRIGHT
+
 When the Torch is turned “ON”, i.e. when it is bright, the LDR offers a low resistance, and thus the potential drop across the Resistor RV1 is large, and since the Non-Inverting Voltage of the Comparator 1 is set to VCC/3, when the value of the potential drop across RV1 exceeds VCC/3, the output of the Comparator is ‘0’, so the S pin of the Flip-Flop gets the value of ‘0’, which is then converted to ‘1’ by the Flip-Flop. The output that comes out of the Flip-Flop is ‘1’, which is then converted to ‘0’ by the invertor placed at the Output Stage of the 555 Timer. So, the 555 Timer output is “LOW”. 
 Now because the output of the 555 Timer is “LOW”, negligible current flows through the Resistor R1 and the Base of the Transistor Q. Thus, the transistor gets switched “OFF”. Since the transistor is “OFF”, we can see that the no current would flow through the LED Diode D, and thus is gets switched “OFF”.
 
